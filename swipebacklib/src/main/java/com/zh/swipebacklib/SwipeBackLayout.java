@@ -218,7 +218,7 @@ public class SwipeBackLayout extends FrameLayout {
                 break;
             case MotionEvent.ACTION_MOVE:
                 if(downX > 100){
-                    return;
+                    break;
                 }
                 if (innerScrollView != null && Util.contains(innerScrollView, downX, downY)) {
                     float distanceX = Math.abs(ev.getRawX() - downX);
